@@ -43,7 +43,6 @@ urlinfo_t *parse_url(char *url)
     } else if (strstr(hostname, "http://")) {
       hostname += 7;
     } else {
-      printf("We found a REGULAR URL\n");
       hostname = strdup(url);
     }
 
